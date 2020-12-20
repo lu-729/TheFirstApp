@@ -6,11 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "HomeViewController.h"
-#import "StoreViewController.h"
-#import "MirrorViewController.h"
-#import "SquareViewController.h"
-#import "MineViewController.h"
+#import "CPTabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -20,31 +16,13 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions  API_AVAILABLE(ios(13.0)){
-    NSLog(@"调用Scene方法");
-    //创建window
+    //创建window并设置它的windowScene属性（如果不设置该属性，窗口将无法显示）
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     self.window.windowScene = (UIWindowScene *)scene;
-    //创建视图控制器、导航控制器以及TabBar控制器
-    HomeViewController *homeVC = [[HomeViewController alloc] init];
-    StoreViewController *storeVC = [[StoreViewController alloc] init];
-    MirrorViewController *mirrorVC = [[MirrorViewController alloc] init];
-    SquareViewController *squareVC = [[SquareViewController alloc] init];
-    MineViewController *mineVC = [[MineViewController alloc] init];
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    UINavigationController *storeNav = [[UINavigationController alloc] initWithRootViewController:storeVC];
-    UINavigationController *mirrorNav = [[UINavigationController alloc] initWithRootViewController:mirrorVC];
-    UINavigationController *squareNav = [[UINavigationController alloc] initWithRootViewController:squareVC];
-    UINavigationController *mineNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
-    UITabBarController *tabbarCtrl = [[UITabBarController alloc] init];
-    [tabbarCtrl setViewControllers:@[homeNav,storeNav,mirrorNav,squareNav,mineNav]];
-    //将tabBar控制器添加为window的根控制器
-    self.window.rootViewController = tabbarCtrl;
-    homeVC.view.backgroundColor = [UIColor redColor];
-    storeVC.view.backgroundColor = [UIColor orangeColor];
-    mirrorVC.view.backgroundColor = [UIColor yellowColor];
-    squareVC.view.backgroundColor = [UIColor greenColor];
-    mineVC.view.backgroundColor = [UIColor blueColor];
-    
+    //创建tabBar控制器并将其设为window的根控制器
+    CPTabBarController *tabBarCtrl = [[CPTabBarController alloc] init];
+    self.window.rootViewController = tabBarCtrl;
+    //显示窗口
     [self.window makeKeyAndVisible];
 }
 

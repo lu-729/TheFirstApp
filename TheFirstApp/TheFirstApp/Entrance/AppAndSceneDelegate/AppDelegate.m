@@ -6,11 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "StoreViewController.h"
-#import "MirrorViewController.h"
-#import "SquareViewController.h"
-#import "MineViewController.h"
+#import "CPTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -24,28 +20,11 @@
     if(@available(iOS 13,*)) {
         return YES;
     } else {
-        NSLog(@"调用App方法");
+        NSLog(@"当前版本为iOS12或以前的");
+        //创建window和tabBar控制器并将tabBar控制器设为window的根控制器
         self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-        //创建视图控制器、导航控制器以及TabBar控制器
-        HomeViewController *homeVC = [[HomeViewController alloc] init];
-        StoreViewController *storeVC = [[StoreViewController alloc] init];
-        MirrorViewController *mirrorVC = [[MirrorViewController alloc] init];
-        SquareViewController *squareVC = [[SquareViewController alloc] init];
-        MineViewController *mineVC = [[MineViewController alloc] init];
-        UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeVC];
-        UINavigationController *storeNav = [[UINavigationController alloc] initWithRootViewController:storeVC];
-        UINavigationController *mirrorNav = [[UINavigationController alloc] initWithRootViewController:mirrorVC];
-        UINavigationController *squareNav = [[UINavigationController alloc] initWithRootViewController:squareVC];
-        UINavigationController *mineNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
-        UITabBarController *tabbarCtrl = [[UITabBarController alloc] init];
-        [tabbarCtrl setViewControllers:@[homeNav,storeNav,mirrorNav,squareNav,mineNav]];
-        //将tabBar控制器添加为window的根控制器
-        self.window.rootViewController = tabbarCtrl;
-        homeVC.view.backgroundColor = [UIColor redColor];
-        storeVC.view.backgroundColor = [UIColor orangeColor];
-        mirrorVC.view.backgroundColor = [UIColor yellowColor];
-        squareVC.view.backgroundColor = [UIColor greenColor];
-        mineVC.view.backgroundColor = [UIColor blueColor];
+        CPTabBarController *tabBarCtrl = [[CPTabBarController alloc] init];
+        self.window.rootViewController = tabBarCtrl;
         //显示窗口
         [self.window makeKeyAndVisible];
         return YES;

@@ -18,6 +18,19 @@
     // Do any additional setup after loading the view.
 }
 
+- (instancetype)initWithTitle:(NSString *)title tabBarItemIcon:(NSString *)icon tabBarItemSelectedIcon:(NSString *)selectedIcon
+{
+    self = [super init];
+    if (self) {
+        self.tabBarItem.title = title;
+        UIImage *image = [[UIImage imageNamed:icon] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.tabBarItem.image = image;
+        UIImage *selectedImage = [[UIImage imageNamed:selectedIcon] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.tabBarItem.selectedImage = selectedImage;
+    }
+    return self;
+}
+
 /*
 #pragma mark - Navigation
 
