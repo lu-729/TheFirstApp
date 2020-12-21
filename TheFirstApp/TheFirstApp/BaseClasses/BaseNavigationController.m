@@ -1,17 +1,17 @@
 //
-//  BaseViewController.m
+//  CPNavigationController.m
 //  TheFirstApp
 //
-//  Created by chengpiao on 2020/12/19.
+//  Created by chengpiao on 2020/12/21.
 //
 
-#import "BaseViewController.h"
+#import "BaseNavigationController.h"
 
-@interface BaseViewController ()
+@interface BaseNavigationController ()
 
 @end
 
-@implementation BaseViewController
+@implementation BaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

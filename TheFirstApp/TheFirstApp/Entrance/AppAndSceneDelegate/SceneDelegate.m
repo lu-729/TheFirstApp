@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "CPTabBarController.h"
+#import "BaseTabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     self.window.windowScene = (UIWindowScene *)scene;
     //创建tabBar控制器并将其设为window的根控制器
-    CPTabBarController *tabBarCtrl = [[CPTabBarController alloc] init];
+    BaseTabBarController *tabBarCtrl = [[BaseTabBarController alloc] init];
     self.window.rootViewController = tabBarCtrl;
     //显示窗口
     [self.window makeKeyAndVisible];

@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CPTabBarController.h"
+#import "BaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
         NSLog(@"当前版本为iOS12或以前的");
         //创建window和tabBar控制器并将tabBar控制器设为window的根控制器
         self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
-        CPTabBarController *tabBarCtrl = [[CPTabBarController alloc] init];
+        BaseTabBarController *tabBarCtrl = [[BaseTabBarController alloc] init];
         self.window.rootViewController = tabBarCtrl;
         //显示窗口
         [self.window makeKeyAndVisible];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0630987A2590455800582E11 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063098792590455800582E11 /* BaseNavigationController.m */; };
 		0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC23258DCEA700853F49 /* AppDelegate.m */; };
 		0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC26258DCEA700853F49 /* SceneDelegate.m */; };
 		0636EC2F258DCEAB00853F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0636EC2E258DCEAB00853F49 /* Assets.xcassets */; };
@@ -22,7 +23,7 @@
 		0636ECD1258DEB8400853F49 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ECD0258DEB8400853F49 /* MineViewController.m */; };
 		0636ECFE258E0B0B00853F49 /* MirrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ECFD258E0B0B00853F49 /* MirrorViewController.m */; };
 		0636ED05258E138800853F49 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED04258E138800853F49 /* BaseViewController.m */; };
-		0636ED23258F65AB00853F49 /* CPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED22258F65AB00853F49 /* CPTabBarController.m */; };
+		0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED22258F65AB00853F49 /* BaseTabBarController.m */; };
 		D513946E2F21E475D82CBBEB /* libPods-TheFirstApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01330ADD881290B70948C001 /* libPods-TheFirstApp.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		01330ADD881290B70948C001 /* libPods-TheFirstApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		063098782590455800582E11 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		063098792590455800582E11 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		0636EC1F258DCEA700853F49 /* TheFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0636EC22258DCEA700853F49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0636EC23258DCEA700853F49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,8 +79,8 @@
 		0636ECFD258E0B0B00853F49 /* MirrorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirrorViewController.m; sourceTree = "<group>"; };
 		0636ED03258E138800853F49 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0636ED04258E138800853F49 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		0636ED21258F65AB00853F49 /* CPTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPTabBarController.h; sourceTree = "<group>"; };
-		0636ED22258F65AB00853F49 /* CPTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTabBarController.m; sourceTree = "<group>"; };
+		0636ED21258F65AB00853F49 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		0636ED22258F65AB00853F49 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		0B057B99E521FD9CDF748AF5 /* Pods-TheFirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.release.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.release.xcconfig"; sourceTree = "<group>"; };
 		64005A1ECDD9AE420F5D49F4 /* Pods-TheFirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.debug.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -375,8 +378,10 @@
 			children = (
 				0636ED03258E138800853F49 /* BaseViewController.h */,
 				0636ED04258E138800853F49 /* BaseViewController.m */,
-				0636ED21258F65AB00853F49 /* CPTabBarController.h */,
-				0636ED22258F65AB00853F49 /* CPTabBarController.m */,
+				0636ED21258F65AB00853F49 /* BaseTabBarController.h */,
+				0636ED22258F65AB00853F49 /* BaseTabBarController.m */,
+				063098782590455800582E11 /* BaseNavigationController.h */,
+				063098792590455800582E11 /* BaseNavigationController.m */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -579,8 +584,9 @@
 				0636EC95258DE8B000853F49 /* SignUpViewController.m in Sources */,
 				0636EC35258DCEAB00853F49 /* main.m in Sources */,
 				0636ECC5258DEB6500853F49 /* StoreViewController.m in Sources */,
-				0636ED23258F65AB00853F49 /* CPTabBarController.m in Sources */,
+				0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */,
 				0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */,
+				0630987A2590455800582E11 /* BaseNavigationController.m in Sources */,
 				0636ECBC258DEB4F00853F49 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
