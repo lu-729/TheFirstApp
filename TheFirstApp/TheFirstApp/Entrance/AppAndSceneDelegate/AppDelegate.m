@@ -25,6 +25,7 @@
         self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
         BaseTabBarController *tabBarCtrl = [[BaseTabBarController alloc] init];
         self.window.rootViewController = tabBarCtrl;
+        self.window.backgroundColor = [UIColor whiteColor];
         //显示窗口
         [self.window makeKeyAndVisible];
         return YES;

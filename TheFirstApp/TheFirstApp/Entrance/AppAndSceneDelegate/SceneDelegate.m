@@ -22,6 +22,7 @@
     //创建tabBar控制器并将其设为window的根控制器
     BaseTabBarController *tabBarCtrl = [[BaseTabBarController alloc] init];
     self.window.rootViewController = tabBarCtrl;
+    self.window.backgroundColor = [UIColor whiteColor];
     //显示窗口
     [self.window makeKeyAndVisible];
 }

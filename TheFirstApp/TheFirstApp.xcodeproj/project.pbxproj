@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060556C52591E904005A0EF6 /* WYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 060556C42591E904005A0EF6 /* WYTabBar.m */; };
+		060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */; };
 		0630987A2590455800582E11 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063098792590455800582E11 /* BaseNavigationController.m */; };
+		0630989D2590ECCB00582E11 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */; };
 		0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC23258DCEA700853F49 /* AppDelegate.m */; };
 		0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC26258DCEA700853F49 /* SceneDelegate.m */; };
 		0636EC2F258DCEAB00853F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0636EC2E258DCEAB00853F49 /* Assets.xcassets */; };
@@ -46,8 +49,15 @@
 
 /* Begin PBXFileReference section */
 		01330ADD881290B70948C001 /* libPods-TheFirstApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		060556C32591E904005A0EF6 /* WYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTabBar.h; sourceTree = "<group>"; };
+		060556C42591E904005A0EF6 /* WYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTabBar.m; sourceTree = "<group>"; };
+		060556E825921E55005A0EF6 /* UIView+GetSizeAndOrigin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GetSizeAndOrigin.h"; sourceTree = "<group>"; };
+		060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetSizeAndOrigin.m"; sourceTree = "<group>"; };
+		060556EE2592204A005A0EF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		063098782590455800582E11 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		063098792590455800582E11 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		0630989B2590ECCB00582E11 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
+		0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		0636EC1F258DCEA700853F49 /* TheFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0636EC22258DCEA700853F49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0636EC23258DCEA700853F49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +192,9 @@
 			children = (
 				0636EC33258DCEAB00853F49 /* Info.plist */,
 				0636EC34258DCEAB00853F49 /* main.m */,
+				060556E825921E55005A0EF6 /* UIView+GetSizeAndOrigin.h */,
+				060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */,
+				060556EE2592204A005A0EF6 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,8 +393,12 @@
 				0636ED04258E138800853F49 /* BaseViewController.m */,
 				0636ED21258F65AB00853F49 /* BaseTabBarController.h */,
 				0636ED22258F65AB00853F49 /* BaseTabBarController.m */,
+				060556C32591E904005A0EF6 /* WYTabBar.h */,
+				060556C42591E904005A0EF6 /* WYTabBar.m */,
 				063098782590455800582E11 /* BaseNavigationController.h */,
 				063098792590455800582E11 /* BaseNavigationController.m */,
+				0630989B2590ECCB00582E11 /* LaunchScreenViewController.h */,
+				0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -576,8 +593,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0636EC8C258DE89200853F49 /* SignInViewController.m in Sources */,
+				0630989D2590ECCB00582E11 /* LaunchScreenViewController.m in Sources */,
 				0636ECCB258DEB7600853F49 /* SquareViewController.m in Sources */,
 				0636ED05258E138800853F49 /* BaseViewController.m in Sources */,
+				060556C52591E904005A0EF6 /* WYTabBar.m in Sources */,
 				0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */,
 				0636ECFE258E0B0B00853F49 /* MirrorViewController.m in Sources */,
 				0636ECD1258DEB8400853F49 /* MineViewController.m in Sources */,
@@ -587,6 +606,7 @@
 				0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */,
 				0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */,
 				0630987A2590455800582E11 /* BaseNavigationController.m in Sources */,
+				060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */,
 				0636ECBC258DEB4F00853F49 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +695,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TheFirstApp/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -732,6 +754,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TheFirstApp/Supporting Files/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

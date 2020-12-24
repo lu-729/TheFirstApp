@@ -1,17 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "tabBar_mirror.png",
+      "filename" : "tabBar_mirror@2x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "tabBar_mirror@2x.png",
+      "filename" : "tabBar_mirror@3x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "tabBar_mirror@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
