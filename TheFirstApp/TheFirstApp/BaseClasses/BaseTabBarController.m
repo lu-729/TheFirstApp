@@ -13,6 +13,7 @@
 #import "MineViewController.h"
 #import "BaseNavigationController.h"
 #import "WYTabBar.h"
+#import "QueryIPhoneModel.h" //查询手机类型
 
 @interface BaseTabBarController ()
 
@@ -25,12 +26,14 @@
     [self useCustomTabBar];
     [self addChildViewControllers];
     [self setTabBarItemAttributes];
+    
 }
 
 //使用KVC将分栏控制器自带的TabBar替换成自定义的
 - (void)useCustomTabBar {
     WYTabBar *customTabBar = [[WYTabBar alloc] init];
     [self setValue:customTabBar forKey:@"tabBar"];
+    NSLog(@"self.tabbar.height = %f", customTabBar.height);
 }
 
 - (void)addChildViewControllers {
@@ -47,11 +50,19 @@
         UIImage *image = [[UIImage imageNamed:imageArr[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         UIImage *selectedImage = [[UIImage imageNamed:selectedImageArr[i]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         vc.tabBarItem = [[UITabBarItem alloc] initWithTitle:titleArr[i] image:image selectedImage:selectedImage];
+        //调整image和title的位置，只调整title位置时，image位置的x值也会跟随偏移
+        if ([QueryIPhoneModel queryIsBangModelPhone]) {
+            [vc.tabBarItem setImageInsets:UIEdgeInsetsMake(-25, 0, 0, 0)];
+            [vc.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -35)];
+        } else {
+            [vc.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -5)];
+        }
         //将数组arr里面的vc换成对应的nav
         [arr replaceObjectAtIndex:i withObject:nav];
     }
     [[UITabBar appearance] setTintColor:[UIColor orangeColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    NSLog(@"self.tabBar.items.description = %@",self.tabBarItem.description);
     //将导航控制器设置为分栏控制器的子控制器
     self.viewControllers = arr;
 }

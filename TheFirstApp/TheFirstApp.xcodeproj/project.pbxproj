@@ -27,6 +27,7 @@
 		0636ECFE258E0B0B00853F49 /* MirrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ECFD258E0B0B00853F49 /* MirrorViewController.m */; };
 		0636ED05258E138800853F49 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED04258E138800853F49 /* BaseViewController.m */; };
 		0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED22258F65AB00853F49 /* BaseTabBarController.m */; };
+		0642EF7C2595FB3800D4690D /* QueryIPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0642EF7B2595FB3800D4690D /* QueryIPhoneModel.m */; };
 		D513946E2F21E475D82CBBEB /* libPods-TheFirstApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01330ADD881290B70948C001 /* libPods-TheFirstApp.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,8 @@
 		0636ED04258E138800853F49 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		0636ED21258F65AB00853F49 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		0636ED22258F65AB00853F49 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		0642EF7A2595FB3800D4690D /* QueryIPhoneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryIPhoneModel.h; sourceTree = "<group>"; };
+		0642EF7B2595FB3800D4690D /* QueryIPhoneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryIPhoneModel.m; sourceTree = "<group>"; };
 		0B057B99E521FD9CDF748AF5 /* Pods-TheFirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.release.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.release.xcconfig"; sourceTree = "<group>"; };
 		64005A1ECDD9AE420F5D49F4 /* Pods-TheFirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.debug.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +197,8 @@
 				0636EC34258DCEAB00853F49 /* main.m */,
 				060556E825921E55005A0EF6 /* UIView+GetSizeAndOrigin.h */,
 				060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */,
+				0642EF7A2595FB3800D4690D /* QueryIPhoneModel.h */,
+				0642EF7B2595FB3800D4690D /* QueryIPhoneModel.m */,
 				060556EE2592204A005A0EF6 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
@@ -606,6 +611,7 @@
 				0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */,
 				0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */,
 				0630987A2590455800582E11 /* BaseNavigationController.m in Sources */,
+				0642EF7C2595FB3800D4690D /* QueryIPhoneModel.m in Sources */,
 				060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */,
 				0636ECBC258DEB4F00853F49 /* HomeViewController.m in Sources */,
 			);

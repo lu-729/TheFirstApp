@@ -6,6 +6,7 @@
 //
 
 #import "WYTabBar.h"
+#import "QueryIPhoneModel.h"
 
 @implementation WYTabBar
 
@@ -24,6 +25,7 @@
     [super layoutSubviews];
     CGFloat buttonW = self.frame.size.width / 5.f;
     CGFloat buttonH = self.frame.size.height;
+    CGFloat buttonX = 0;
     NSInteger index = 0;
     //遍历TabBar的所有子视图
     for (UIView *subView in self.subviews) {
@@ -32,11 +34,15 @@
         if ([subView isKindOfClass:[UIButton class]]) {
             subView.frame = CGRectMake(0, 0, buttonW, buttonH);
             subView.center = CGPointMake(self.width * 0.5f, self.height * 0.5f);
+            if ([QueryIPhoneModel queryIsBangModelPhone]) {
+                UIButton *button = (UIButton *)subView;
+                [button setImageEdgeInsets:UIEdgeInsetsMake(-25, 0, 0, 0)];
+            }
             [self bringSubviewToFront:subView];
         }
         //判断当前subView，如果为UITabBarButton，则设置其frame，如果不是则中断本次循环继续下一次循环
         if (![subView isKindOfClass:NSClassFromString(@"UITabBarButton")]) continue;
-        CGFloat buttonX = index>1?buttonW*(index+1):buttonW*index;
+        buttonX = index>1?buttonW*(index+1):buttonW*index;
         subView.frame  = CGRectMake(buttonX, 0.f, buttonW, buttonH);
         index++;
     }
