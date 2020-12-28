@@ -10,7 +10,6 @@
 		060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */; };
 		0630987A2590455800582E11 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063098792590455800582E11 /* BaseNavigationController.m */; };
 		0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC23258DCEA700853F49 /* AppDelegate.m */; };
-		0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC26258DCEA700853F49 /* SceneDelegate.m */; };
 		0636EC2F258DCEAB00853F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0636EC2E258DCEAB00853F49 /* Assets.xcassets */; };
 		0636EC32258DCEAB00853F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0636EC30258DCEAB00853F49 /* LaunchScreen.storyboard */; };
 		0636EC35258DCEAB00853F49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC34258DCEAB00853F49 /* main.m */; };
@@ -59,8 +58,6 @@
 		0636EC1F258DCEA700853F49 /* TheFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0636EC22258DCEA700853F49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0636EC23258DCEA700853F49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0636EC25258DCEA700853F49 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0636EC26258DCEA700853F49 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0636EC2E258DCEAB00853F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0636EC31258DCEAB00853F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0636EC33258DCEAB00853F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -262,8 +259,6 @@
 			children = (
 				0636EC22258DCEA700853F49 /* AppDelegate.h */,
 				0636EC23258DCEA700853F49 /* AppDelegate.m */,
-				0636EC25258DCEA700853F49 /* SceneDelegate.h */,
-				0636EC26258DCEA700853F49 /* SceneDelegate.m */,
 			);
 			path = AppAndSceneDelegate;
 			sourceTree = "<group>";
@@ -623,7 +618,6 @@
 				0636EC35258DCEAB00853F49 /* main.m in Sources */,
 				0636ECC5258DEB6500853F49 /* StoreViewController.m in Sources */,
 				0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */,
-				0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */,
 				0630987A2590455800582E11 /* BaseNavigationController.m in Sources */,
 				0642EF7C2595FB3800D4690D /* QueryIPhoneModel.m in Sources */,
 				060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */,

@@ -36,14 +36,14 @@
         //使用NSClassFromString获取类名并创建对应类对象
         UIViewController *vc = [[NSClassFromString(arr[i]) alloc] init];
         BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+        //设置TabBar的文字以及选中和默认状态下的图标
         nav.tabBarItem.image = [UIImage imageNamed:imageArr[i]];
         nav.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageArr[i]];
         nav.tabBarItem.title = titleArr[i];
         nav.navigationItem.title = titleArr[i];
         [arr replaceObjectAtIndex:i withObject:nav];
     }
-    NSArray *navArr = [NSArray arrayWithArray:arr];
-    [self setViewControllers:navArr];
+    [self setViewControllers:arr];
 }
 
 
