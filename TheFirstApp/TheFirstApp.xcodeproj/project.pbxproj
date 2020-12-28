@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		060556C52591E904005A0EF6 /* WYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 060556C42591E904005A0EF6 /* WYTabBar.m */; };
 		060556EA25921E55005A0EF6 /* UIView+GetSizeAndOrigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */; };
 		0630987A2590455800582E11 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063098792590455800582E11 /* BaseNavigationController.m */; };
-		0630989D2590ECCB00582E11 /* LaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */; };
 		0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC23258DCEA700853F49 /* AppDelegate.m */; };
 		0636EC27258DCEA700853F49 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636EC26258DCEA700853F49 /* SceneDelegate.m */; };
 		0636EC2F258DCEAB00853F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0636EC2E258DCEAB00853F49 /* Assets.xcassets */; };
@@ -28,6 +26,9 @@
 		0636ED05258E138800853F49 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED04258E138800853F49 /* BaseViewController.m */; };
 		0636ED23258F65AB00853F49 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0636ED22258F65AB00853F49 /* BaseTabBarController.m */; };
 		0642EF7C2595FB3800D4690D /* QueryIPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0642EF7B2595FB3800D4690D /* QueryIPhoneModel.m */; };
+		06F1CE832598CF460064288C /* WYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F1CE822598CF460064288C /* WYTabBar.m */; };
+		06F1CE892598CF9F0064288C /* WYTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F1CE882598CF9F0064288C /* WYTabBarItem.m */; };
+		06F1CE8F25990F1E0064288C /* WYTabBarVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F1CE8E25990F1E0064288C /* WYTabBarVController.m */; };
 		D513946E2F21E475D82CBBEB /* libPods-TheFirstApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01330ADD881290B70948C001 /* libPods-TheFirstApp.a */; };
 /* End PBXBuildFile section */
 
@@ -50,15 +51,11 @@
 
 /* Begin PBXFileReference section */
 		01330ADD881290B70948C001 /* libPods-TheFirstApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		060556C32591E904005A0EF6 /* WYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTabBar.h; sourceTree = "<group>"; };
-		060556C42591E904005A0EF6 /* WYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTabBar.m; sourceTree = "<group>"; };
 		060556E825921E55005A0EF6 /* UIView+GetSizeAndOrigin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GetSizeAndOrigin.h"; sourceTree = "<group>"; };
 		060556E925921E55005A0EF6 /* UIView+GetSizeAndOrigin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetSizeAndOrigin.m"; sourceTree = "<group>"; };
 		060556EE2592204A005A0EF6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		063098782590455800582E11 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		063098792590455800582E11 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		0630989B2590ECCB00582E11 /* LaunchScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchScreenViewController.h; sourceTree = "<group>"; };
-		0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchScreenViewController.m; sourceTree = "<group>"; };
 		0636EC1F258DCEA700853F49 /* TheFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0636EC22258DCEA700853F49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0636EC23258DCEA700853F49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +91,12 @@
 		0636ED22258F65AB00853F49 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		0642EF7A2595FB3800D4690D /* QueryIPhoneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryIPhoneModel.h; sourceTree = "<group>"; };
 		0642EF7B2595FB3800D4690D /* QueryIPhoneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryIPhoneModel.m; sourceTree = "<group>"; };
+		06F1CE812598CF460064288C /* WYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTabBar.h; sourceTree = "<group>"; };
+		06F1CE822598CF460064288C /* WYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTabBar.m; sourceTree = "<group>"; };
+		06F1CE872598CF9F0064288C /* WYTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTabBarItem.h; sourceTree = "<group>"; };
+		06F1CE882598CF9F0064288C /* WYTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTabBarItem.m; sourceTree = "<group>"; };
+		06F1CE8D25990F1E0064288C /* WYTabBarVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYTabBarVController.h; sourceTree = "<group>"; };
+		06F1CE8E25990F1E0064288C /* WYTabBarVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYTabBarVController.m; sourceTree = "<group>"; };
 		0B057B99E521FD9CDF748AF5 /* Pods-TheFirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.release.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.release.xcconfig"; sourceTree = "<group>"; };
 		64005A1ECDD9AE420F5D49F4 /* Pods-TheFirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstApp.debug.xcconfig"; path = "Target Support Files/Pods-TheFirstApp/Pods-TheFirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -396,16 +399,26 @@
 			children = (
 				0636ED03258E138800853F49 /* BaseViewController.h */,
 				0636ED04258E138800853F49 /* BaseViewController.m */,
-				0636ED21258F65AB00853F49 /* BaseTabBarController.h */,
-				0636ED22258F65AB00853F49 /* BaseTabBarController.m */,
-				060556C32591E904005A0EF6 /* WYTabBar.h */,
-				060556C42591E904005A0EF6 /* WYTabBar.m */,
 				063098782590455800582E11 /* BaseNavigationController.h */,
 				063098792590455800582E11 /* BaseNavigationController.m */,
-				0630989B2590ECCB00582E11 /* LaunchScreenViewController.h */,
-				0630989C2590ECCB00582E11 /* LaunchScreenViewController.m */,
+				0680E5602599DF3300C15625 /* WYTabBar */,
 			);
 			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		0680E5602599DF3300C15625 /* WYTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0636ED21258F65AB00853F49 /* BaseTabBarController.h */,
+				0636ED22258F65AB00853F49 /* BaseTabBarController.m */,
+				06F1CE8D25990F1E0064288C /* WYTabBarVController.h */,
+				06F1CE8E25990F1E0064288C /* WYTabBarVController.m */,
+				06F1CE872598CF9F0064288C /* WYTabBarItem.h */,
+				06F1CE882598CF9F0064288C /* WYTabBarItem.m */,
+				06F1CE812598CF460064288C /* WYTabBar.h */,
+				06F1CE822598CF460064288C /* WYTabBar.m */,
+			);
+			path = WYTabBar;
 			sourceTree = "<group>";
 		};
 		4A2BD12BE38F333A5DBB9F43 /* Frameworks */ = {
@@ -598,13 +611,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0636EC8C258DE89200853F49 /* SignInViewController.m in Sources */,
-				0630989D2590ECCB00582E11 /* LaunchScreenViewController.m in Sources */,
 				0636ECCB258DEB7600853F49 /* SquareViewController.m in Sources */,
+				06F1CE832598CF460064288C /* WYTabBar.m in Sources */,
 				0636ED05258E138800853F49 /* BaseViewController.m in Sources */,
-				060556C52591E904005A0EF6 /* WYTabBar.m in Sources */,
+				06F1CE8F25990F1E0064288C /* WYTabBarVController.m in Sources */,
 				0636EC24258DCEA700853F49 /* AppDelegate.m in Sources */,
 				0636ECFE258E0B0B00853F49 /* MirrorViewController.m in Sources */,
 				0636ECD1258DEB8400853F49 /* MineViewController.m in Sources */,
+				06F1CE892598CF9F0064288C /* WYTabBarItem.m in Sources */,
 				0636EC95258DE8B000853F49 /* SignUpViewController.m in Sources */,
 				0636EC35258DCEAB00853F49 /* main.m in Sources */,
 				0636ECC5258DEB6500853F49 /* StoreViewController.m in Sources */,

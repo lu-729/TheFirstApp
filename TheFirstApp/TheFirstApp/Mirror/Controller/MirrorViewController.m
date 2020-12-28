@@ -15,7 +15,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self createSubviews];
+    self.view.backgroundColor = [UIColor greenColor];
+}
+
+- (void)createSubviews {
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100.f, 40.f)];
+    button.center = self.view.center;
+    button.backgroundColor = [UIColor yellowColor];
+    [button setTitle:@"返回" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)buttonClicked {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WYTabBar.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseTabBarController : UITabBarController
+@interface BaseTabBarController : UITabBarController <WYTabBarDelegate>
+
+@property (nonatomic, strong) WYTabBar *wyTabBar;
 
 @end
 

@@ -19,4 +19,12 @@
     return NO;
 }
 
+//判断当前系统版本是否是iOS12及以前的版本
++ (BOOL)queryiOSVersionsIsiOS12orOlder {
+    if (@available(iOS 13, *)) {
+        return NO;
+    }
+    return YES;
+}
+
 @end

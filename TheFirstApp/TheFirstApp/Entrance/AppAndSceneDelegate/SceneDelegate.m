@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "BaseTabBarController.h"
+#import "WYTabBarVController.h"
 
 @interface SceneDelegate ()
 
@@ -21,7 +22,8 @@
     self.window.windowScene = (UIWindowScene *)scene;
     //创建tabBar控制器并将其设为window的根控制器
     BaseTabBarController *tabBarCtrl = [[BaseTabBarController alloc] init];
-    self.window.rootViewController = tabBarCtrl;
+    WYTabBarVController *testTabBarCtrl = [[WYTabBarVController alloc] init];
+    self.window.rootViewController = testTabBarCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     //显示窗口
     [self.window makeKeyAndVisible];

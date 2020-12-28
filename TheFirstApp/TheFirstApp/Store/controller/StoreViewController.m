@@ -15,7 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"商家";
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 /*

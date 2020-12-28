@@ -15,7 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"广场";
+    self.view.backgroundColor = [UIColor yellowColor];
+
 }
 
 /*

@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface QueryIPhoneModel : NSObject
 
 + (BOOL)queryIsBangModelPhone;
++ (BOOL)queryiOSVersionsIsiOS12orOlder;
 
 @end
 
